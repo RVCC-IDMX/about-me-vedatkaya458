@@ -1,0 +1,31 @@
+body {
+    font-family: "Protest Revolution";
+    background-color: #E1D884;
+    color: #1E5566;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Protest Guerrilla";
+    font-size:75pt;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    color: #52E02D;
+    border: 2px solid #E62F15;
+    border-width: 5px;
+    background-color: #664527;
+    text-align: center;
+    padding: 10px;
+}
+
+#hero img {
+    width: 300px;
+}
+
+#bio {
+    text-align: left;
+}
