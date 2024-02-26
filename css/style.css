@@ -6,6 +6,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Protest Guerrilla";
+    text-align: center;
+}
+h1 {
     font-size:75pt;
 }
 
@@ -20,6 +23,7 @@ header {
     background-color: #664527;
     text-align: center;
     padding: 10px;
+    font-size: 30px;
 }
 
 #hero img {
@@ -27,5 +31,33 @@ header {
 }
 
 #bio {
-    text-align: left;
+    text-align: center;
+}
+
+#hobbies ul li:nth-child(even)  {
+    color: purple;
+    content: '•';
+}
+
+#hobbies ul li:nth-child(odd) {
+    color: #FFD700;
+    content: '•';
+    font-weight: bold;
+}
+
+#hobbies ul li:nth-child(2n) {
+    color: #e74c3c;
+    content: '•';
+    font-weight: bold;
+}
+
+#hobbies ul li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+#hobbies {
+    background-color: #87CEFA;
+    padding: 10px;
 }
