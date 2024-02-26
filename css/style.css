@@ -73,6 +73,7 @@ header {
 #gallery {
     border: 2px solid #E62F15;
     border-width: 3px;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -87,3 +88,50 @@ header {
     border: 2px solid #E62F15;
 }
 
+/* Literature */
+
+#lit {
+    border: 2px solid #E62F15;
+    border-width: 3px;
+    margin-bottom: 2rem;
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+}
+
+/* Dropcaps */
+
+#lit div p::first-letter {
+
+    color: white;
+    float: left;
+    font-size: 3em;
+    padding: .25em;
+    margin-right: .25em;
+    line-height: .65;
+}
+
+#lit div p::first-letter {
+    font-weight: bold;
+}
+
+#lit div p::first-letter {
+    font-style: italic;
+}
+
+#lit div p::first-letter {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#lit div p::first-letter {
+    background-image: linear-gradient(to right, #E62F15, #FFA500);
+    color: white;
+    padding: 0.2em 0.4em;
+}
