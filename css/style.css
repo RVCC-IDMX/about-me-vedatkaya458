@@ -26,13 +26,19 @@ header {
     font-size: 30px;
 }
 
+/* Hero Section */
+
 #hero img {
     width: 300px;
 }
 
+/* Bio Section */
+
 #bio {
     text-align: center;
 }
+
+/* Hobbies Section */
 
 #hobbies ul li:nth-child(even)  {
     color: purple;
@@ -61,3 +67,23 @@ header {
     background-color: #87CEFA;
     padding: 10px;
 }
+
+/* Gallery Section */
+
+#gallery {
+    border: 2px solid #E62F15;
+    border-width: 3px;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery figure {
+    text-align: center;
+}
+
+#gallery img {
+    border: 2px solid #E62F15;
+}
+
