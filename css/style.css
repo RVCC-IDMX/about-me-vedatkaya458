@@ -119,33 +119,23 @@ header {
 
 /* Dropcaps */
 
-#lit div p::first-letter {
+#lit div p:first-child::first-letter {
 
-    color: white;
+    color: #3267a1;
+    background-image: radial-gradient(#fff, #a3721c);
     float: left;
     font-size: 3em;
     padding: .25em;
     margin-right: .25em;
     line-height: .65;
+    border: 4px outset #3267a1;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
 }
 
-#lit div p::first-letter {
-    font-weight: bold;
-}
-
-#lit div p::first-letter {
-    font-style: italic;
-}
-
-#lit div p::first-letter {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#lit div p::first-letter {
-    background-image: linear-gradient(to right, #E62F15, #FFA500);
-    color: white;
-    padding: 0.2em 0.4em;
-}
+/* Tablet Size */
 
 @media screen and (min-width: 60em) {
     figure {
@@ -159,5 +149,36 @@ header {
         align-items: center;
         font-size: 2rem;
         margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    #lit div {
+        max-width: 100% ;
+        columns: 20rem;
+    }
+}
+
+/* Larger Screen Size */
+
+@media screen and (min-width: 100em) {
+
+    #gallery {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr ;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
     }
 }
