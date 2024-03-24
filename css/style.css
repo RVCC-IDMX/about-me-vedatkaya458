@@ -135,6 +135,24 @@ section#hobbies {
     border-top-right-radius: 0.2em;
 }
 
+/* Video Section */
+
+#video {
+    text-align: center; 
+}
+
+#video h2 {
+    margin-bottom: 20px; 
+}
+
+#video iframe {
+    width: 100%; 
+    max-width: 560px; 
+    height: 315px; 
+    border: none; 
+}
+
+
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
