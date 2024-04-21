@@ -99,6 +99,14 @@ section#hobbies {
     border: 2px solid #E62F15;
 }
 
+#gallery figure img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery figure img:hover {
+    transform: scale(1.1);
+}
+
 /* Literature */
 
 #lit {
