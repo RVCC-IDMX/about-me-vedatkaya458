@@ -127,8 +127,7 @@ section#hobbies {
 
 /* Dropcaps */
 
-#lit div p:first-child::first-letter {
-
+#lit div p:first-of-type:first-letter {
     color: #3267a1;
     background-image: radial-gradient(#fff, #a3721c);
     float: left;
@@ -268,6 +267,72 @@ legend {
 
 #contact input, #contact textarea {
     border-radius: 5px;
+}
+
+/* Hide navigation links by default */
+#myLinks {
+    display: none;
+}
+
+/* Show navigation links when targeted */
+#myLinks:target {
+    display: block;
+}
+
+/* Hamburger icon styles */
+.icon {
+    display: block;
+    float: right;
+    padding: 15px;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Style the hamburger icon */
+.icon span {
+    background-color: #000;
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Animate hamburger icon when clicked */
+.icon.clicked span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.icon.clicked span:nth-child(2) {
+    opacity: 0;
+}
+
+.icon.clicked span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Style the logo and navigation links */
+.logo, .navbar-links {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-links ul li a {
+    color: #000;
+    text-decoration: none;
 }
 
 

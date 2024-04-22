@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-0ABsFvWI5dGm1WH65/LeR7VF+E6H/9zW95wvA3Hfo/67tmF2MQb/6FnjJLgtpeje" crossorigin="anonymous">
+
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
@@ -16,13 +18,12 @@
 <body>
     
     <header>
-
         <nav class="navbar">
             <div class="logo">
                 <img src="img/M.png" alt="Blue Origami Logo">
                 <h1>Web Dev I</h1>
             </div>
-            <div class="navbar-links">
+            <div class="navbar-links" id="myLinks">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -30,9 +31,22 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="#" class="icon" onclick="toggleMenu()">&#9776;</a>
         </nav>
-
     </header>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
 
 
     <main>
@@ -145,16 +159,46 @@
 
         <article id="lit">
 
-            <h2>An Excerpt From Sherlock Holmes</h2>
+            <h2>Mastering Hover Effects in Web Design: From Basics to Advanced Techniques</h2>
 
             <div>
 
-                <p>The dress which I found waiting for me was of a peculiar shade of blue. It was of excellent material, a sort of beige, but it bore unmistakable signs of having been worn before. It could not have been a better fit if I had been measured for it. Both Mr. and Mrs. Rucastle expressed a delight at the look of it, which seemed quite exaggerated in its vehemence. They were waiting for me in the drawing-room, which is a very large room, stretching along the entire front of the house, with three long windows reaching down to the floor. A chair had been placed close to the central window, with its back turned towards it. In this I was asked to sit, and then Mr. Rucastle, walking up and down on the other side of the room, began to tell me a series of the funniest stories that I have ever listened to. You cannot imagine how comical he was, and I laughed until I was quite weary. Mrs. Rucastle, however, who has evidently no sense of humour, never so much as smiled, but sat with her hands in her lap, and a sad, anxious look upon her face. After an hour or so, Mr. Rucastle suddenly remarked that it was time to commence the duties of the day, and that I might change my dress and go to little Edward in the nursery.</p>
+                <p>Hover effects have become a staple in modern web design, adding interactivity and visual appeal to websites. Whether you're a beginner looking to add simple hover effects or an experienced designer exploring advanced techniques, this comprehensive guide will walk you through the essentials and help you unleash your creativity.</p>
 
-                <p>Two days later this same performance was gone through under exactly similar circumstances. Again I changed my dress, again I sat in the window, and again I laughed very heartily at the funny stories of which my employer had an immense répertoire, and which he told inimitably. Then he handed me a yellow-backed novel, and moving my chair a little sideways, that my own shadow might not fall upon the page, he begged me to read aloud to him. I read for about ten minutes, beginning in the heart of a chapter, and then suddenly, in the middle of a sentence, he ordered me to cease and to change my dress.</p>
-                
-                <p>You can easily imagine, Mr. Holmes, how curious I became as to what the meaning of this extraordinary performance could possibly be. They were always very careful, I observed, to turn my face away from the window, so that I became consumed with the desire to see what was going on behind my back. At first it seemed to be impossible, but I soon devised a means. My hand-mirror had been broken, so a happy thought seized me, and I concealed a piece of the glass in my handkerchief. On the next occasion, in the midst of my laughter, I put my handkerchief up to my eyes, and was able with a little management to see all that there was behind me. I confess that I was disappointed. There was nothing. At least that was my first impression. At the second glance, however, I perceived that there was a man standing in the Southampton Road, a small bearded man in a grey suit, who seemed to be looking in my direction. The road is an important highway, and there are usually people there. This man, however, was leaning against the railings which bordered our field and was looking earnestly up. I lowered my handkerchief and glanced at Mrs. Rucastle to find her eyes fixed upon me with a most searching gaze. She said nothing, but I am convinced that she had divined that I had a mirror in my hand and had seen what was behind me. She rose at once.</p>
-                
+                <li>
+                    <p>Basic Hover Effects:</p>
+                    <p>Hover effects can range from simple enlargements to more complex animations. In Webflow, creating basic hover effects involves three main steps:
+
+                        Selecting the Element: Choose the element you want to apply a hover effect to, such as an image, button, or text block.
+                        Adjusting Styling: Switch to the hover state and adjust the styling of the element using the states menu. For example, you can change the color, size, or position of the element on hover.
+                        Adding Transitions: Switch back to the none state and add transitions to create smooth animations. This ensures that the hover effect occurs gradually and smoothly, enhancing the user experience.
+                        For instance, you can create a hover and zoom effect for an image by scaling it up on hover and scaling it back down when the mouse moves away. Similarly, you can transform a circle into a square on hover by adjusting the border-radius property.</p>
+                </li>
+
+                <li>
+                    <p>Going Beyond the Basics with Filters:</p>
+                    <p>To create more sophisticated hover effects, such as fading elements in or out or colorizing grayscale images, you can use filters. Filters allow you to manipulate properties like saturation, contrast, hue, and blur.
+
+                        For example, you can colorize grayscale images and zoom in on hover by adjusting the saturation and contrast properties. Adding a blur filter can create interesting visual effects, but it's essential to use filters sparingly to avoid overwhelming the user.</p>
+                </li>
+
+                <li>
+                    <p>Advanced Techniques with Timed Actions:</p>
+                    <p>For more complex hover effects, like triggered animations with multiple steps, you can use timed actions. These actions allow you to control the timing and sequence of animations based on user interactions.
+
+                        For instance, you can create a hover effect where elements fade in or out and move in response to mouse movements. By adjusting the timing and duration of these actions, you can create dynamic and engaging hover effects that capture users' attention and enhance the overall user experience.</p>
+                </li>
+
+                <li>
+                    <p>Exploring Limitless Possibilities:</p>
+                    <p>With hover effects, the only limit is your imagination. From creating subtle animations that add depth to your design to crafting bold, attention-grabbing effects that leave a lasting impression, hover effects allow you to express your creativity in countless ways. Whether you're designing a portfolio website, an e-commerce store, or a corporate landing page, integrating hover effects can take your design to the next level and set your website apart from the rest. So, don't be afraid to experiment, explore, and push the boundaries of what's possible with hover effects. With the right tools and techniques at your disposal, you can create truly remarkable web experiences that captivate and delight your audience.</p>
+                </li>
+
+                <li>
+                    <p>Mastering hover effects in web design opens up a world of possibilities for creating interactive and visually appealing websites. Whether you're adding simple hover effects or experimenting with advanced techniques, tools like Webflow empower you to bring your designs to life without writing a single line of code.
+
+                        So, dive into the world of hover effects, unleash your creativity, and elevate your web design skills to new heights!</p>
+                </li>
 
             </div>
 
